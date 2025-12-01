@@ -1,1 +1,4 @@
-console.log("WE ARE LIVE!!!")
+import "./style.css";
+import { Homepage } from "./home";
+
+Homepage()
