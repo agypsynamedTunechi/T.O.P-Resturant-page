@@ -13,21 +13,21 @@ const body = document.querySelector("header")
 
 
 
-//     content.innerHTML = ""
+    content.innerHTML = ""
 
-//     Homepage()
+    Homepage()
 
-//     homeBtn.addEventListener("click", ()=>{
-//         content.innerHTML = ""
-//         Homepage()
-//     })
+    homeBtn.addEventListener("click", ()=>{
+        content.innerHTML = ""
+        Homepage()
+    })
 
-//     menuBtn.addEventListener("click", ()=>{
-//         content.innerHTML = ""
-//         MenuPage()
-//     })
+    menuBtn.addEventListener("click", ()=>{
+        content.innerHTML = ""
+        MenuPage()
+    })
 
-// contactBtn.addEventListener("click", ()=>{
-//     content.innerHTML = ""
-//     Contactpage()
-// })
+contactBtn.addEventListener("click", ()=>{
+    content.innerHTML = ""
+    Contactpage()
+})
