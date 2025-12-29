@@ -1,66 +1,260 @@
-*{
-    margin: 0;
-    padding: 0;
+@font-face {
+  font-family: "Viga";
+  src: url("./fonts/Viga/Viga-Regular.woff2") format("woff2"),
+    url("./fonts/Viga/Viga-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-header{
-    background-color: rgb(71, 33, 33);
+@font-face {
+  font-family: "Indie Flower";
+  src: url("./fonts/Indie_Flower/IndieFlower.woff2") format("woff2"),
+    url("./fonts/Indie_Flower/IndieFlower.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lilita One";
+  src: url("./fonts/Lilita_One/LilitaOne.woff2") format("woff2"),
+    url("./fonts/Lilita_One/LilitaOne.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* font-family: Viga, Arial, Helvetica, sans-serif; */
+}
+
+header {
+  background-color: rgb(71, 33, 33);
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+img{
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  font-family: Viga, Arial, Helvetica, sans-serif;
+  padding: 2px 10px 0px 10px;
+  background: none;
+  color: aliceblue;
+  font-size: 1.2rem;
+  border: none;
+}
+button:hover{
+  cursor: pointer;
+}
+
+#content {
+  width: 100%;
+  background-color: whitesmoke;
+}
+
+/* HOME PAGE */
+
+.brand-name {
+  color: antiquewhite;
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(img/robin-stickel.jpg);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+}
+h1 {
+  font-size: 4rem;
+  font-family: "Lilita One", Arial, Helvetica, sans-serif;
+}
+
+.brand-name p {
+  font-family: "Lilita One", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+.about {
+  display: flex;
+}
+
+.about-text {
+  padding: 7rem 4rem;
+  text-align: center;
+  line-height: 1.5; 
+  max-inline-size: 70ch;
+}
+
+.about-text h2 {
+  font-family: Viga, Arial, Helvetica, sans-serif;
+}
+
+.about-text p {
+  font-family: "Indie Flower", Arial, Helvetica, sans-serif;
+}
+
+
+
+.about-img {
+  width: 39%; 
+  max-height: 72%;
+  /* min-width: fit-content; */
+  
+
+  position: absolute;
+  left: 55%;
+  top: 620px;
+}
+
+
+
+/* MENU PAGE */
+.container {
+  display: flex;
+}
+
+.menu-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(img/sandwich.jpg);;
+  background-size: cover;
+  background-position: center;
+  width: 35%;
+  height: 565px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.menu-img div{
+  font-family: "Lilita One", Arial, Helvetica, sans-serif;
     display: flex;
-    justify-content: center;
-    padding: 2rem 1rem 1rem 1rem;
-}
-
-nav{
-    width: 30%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-button{
-    padding:2px 10px 0px 10px;
-    background: none;
-    color: aliceblue;
-    font-size: 1.2rem;
-    border: none;
-}
-
-#content{
-    width: 100%;
+    align-items: center;
     background-color: whitesmoke;
+    padding: .5rem;
 }
 
-.brand-name{
-    color: antiquewhite;
-    width: 100vw;
-    height: 85vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/robin-stickel.jpg);
-    background-size: cover;
-    background-position: right;
-    display: flex;
-    flex-direction: column;
-    text-align:center;
-    justify-content: center;
-    position: relative;
+.menu-img div:nth-child(1){
+  background-color: rgb(121, 89, 2);
+} 
+
+.menu-img div:nth-child(2){
+    margin: 1rem 0;
 }
 
-.about{
-    display: flex;
+.menu-img img{
+    width: 40px;
+    margin-right: 1rem;
 }
 
-.about-text{
-    padding: 2rem;
-    text-align: center;
-    line-height: 1.5;
-    width: 50%;
-    
+.menu-container {
+  width: 65%;
+  background-color: rgb(161, 119, 2);
 }
 
-.about-img{
-    width: 400px;
-    
-    position: absolute;
-    left: 60%;
-    top: 95%;
-    bottom: 10%;
+.menu {
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.39);
+
+  display: flex;
+  
 }
 
+.menu h2{
+  font-family: Viga, Arial, Helvetica, sans-serif;
+  margin: 1rem;
+  margin-bottom: 0;
+}
+
+.side-a, .side-b{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.side-a div, .side-b div{
+  /* flex: 1; */
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  font-family: "Indie Flower", Arial, Helvetica, sans-serif;
+  font-size: 1.02rem;
+}
+
+.side-a p:last-child, .side-b p:last-child{
+  font-family: Viga, Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* CONTACT PAGE */
+
+.contact-container{
+  height: 87.6vh;
+  width: 100%;
+  display: flex;
+}
+
+/* .contact-container img{
+  width: 350px;
+
+} */
+
+.contact-text{
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-text h2{
+  font-family: "Lilita One", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+.contact-text p{
+  font-family: Viga, Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact-text h3{
+  font-family: Viga, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+.img-container img{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+
+}
+
+.img-container{
+  width: 45%;
+}

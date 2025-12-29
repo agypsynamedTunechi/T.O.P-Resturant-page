@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Viga';
+    src: url('Viga-Regular.woff2') format('woff2'),
+        url('Viga-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lilita One';
+    src: url('LilitaOne.woff2') format('woff2'),
+        url('LilitaOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lilita One';
+    src: url('./fonts/LilitaOne.woff2') format('woff2'),
+        url('./fonts/LilitaOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

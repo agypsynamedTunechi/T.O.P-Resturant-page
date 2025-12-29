@@ -1,3 +1,5 @@
+import aboutImage from "./img/cheeseburger.jpg";
+
 export function Homepage(){
     const content = document.querySelector("#content");
 
@@ -21,6 +23,10 @@ export function Homepage(){
     aboutImg.className = "about-img"
     aboutHeader.textContent = "ABOUT US"
     aboutPara.textContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illo a dolorum natus, quod voluptas sequi? Natus accusamus maxime consectetur necessitatibus magnam. Dignissimos neque, quia temporibus id quidem ipsum mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iure debitis vitae libero esse, vel optio, et illo nihil atque qui minima deleniti? Aliquid laborum ea quisquam delectus iure eius."
+
+   
+    aboutImg.src = aboutImage;
+    aboutImg.alt = "A BURGER"
     aboutText.appendChild(aboutHeader)
     aboutText.appendChild(aboutPara)
     aboutDiv.appendChild(aboutText)

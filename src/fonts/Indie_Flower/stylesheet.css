@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Viga';
+    src: url('Viga-Regular.woff2') format('woff2'),
+        url('Viga-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Indie Flower';
+    src: url('./fonts/IndieFlower.woff2') format('woff2'),
+        url('./fonts/IndieFlower.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
